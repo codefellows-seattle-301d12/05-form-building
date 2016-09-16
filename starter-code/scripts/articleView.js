@@ -86,6 +86,8 @@ articleView.create = function() {
   });
 
   $('#article-preview').append(formArticle.toHtml('#article-template'));
+  $('#export-field').show();
+  $('#article-json').val(JSON.stringify(formArticle));
 };
 
 articleView.initNewArticlePage();
