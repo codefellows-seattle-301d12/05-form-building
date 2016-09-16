@@ -65,6 +65,14 @@ articleView.setTeasers = function() {
   });
 };
 
+articleView.initNewArticlePage = function() {
+  $('#export-field').hide();
+  $('#article-json').on('focus', function() {
+    $(this).select();
+  });
+};
+
+articleView.initNewArticlePage();
 articleView.render();
 articleView.handleCategoryFilter();
 articleView.handleAuthorFilter();
