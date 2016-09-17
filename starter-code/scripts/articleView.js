@@ -81,7 +81,7 @@ articleView.create = function() {
     author: $('#article-author').val(),
     url: $('#article-author-url').val(),
     category: $('#article-category').val(),
-    body: $('#article-body'),
+    body: $('#article-body').val(),
     publishedOn: $('#article-published:checked').length ? new Date() : null
   });
 
