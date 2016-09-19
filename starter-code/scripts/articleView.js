@@ -91,7 +91,6 @@ articleView.create = function() {
   });
   $('#export-field').show();
   $('#article-json').val(',' + JSON.stringify(formArticle));
-
 };
 
 articleView.initNewArticlePage();
